@@ -1,0 +1,21 @@
+# Provide a workflow name
+name: First workflow
+
+# Manually start workflow
+on: workflow_dispatch
+
+# Define a job
+jobs:
+  # Provide a job name
+  first-job:
+    # Provide which runner shall execute the job
+    runs-on: ubuntu-latest
+    # Define steps for the job
+    steps:
+      # Step name
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done, bye!"
+    
+
